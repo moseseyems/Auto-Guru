@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Guru Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <main>
+        <header class="subPage">
+            <h1>Auto Guru</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section class="appointment-form">
+            <h2>Book an appointment with us to get your vehicle serviced!</h2>
+            <form action="/submit-appointment" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service">Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="engine-repair">Engine Repair</option>
+                    <option value="body-work">Body Work</option>
+                    <option value="painting">Painting</option>
+                    <option value="maintenance">Maintenance</option>
+                    <option value="MOT-&-Servicing">MOT & Servicing</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+  </main>
+  <footer>
+        <section class="contact-info">
+            <div class="contact-details">
+            <h2>Contact Us</h2>
+            <p>Company Name: Auto Guru Ltd</p>
+            <p>Email: info@autoguru.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Main Street, City, State 12345</p>
+            </div>
+
+            <div class="social-media">
+                <h2>Opening Hours</h2>
+                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+
+                <h3>Follow us on social media</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61563689922556" target="_blank" aria-label="Visit our Facebook page">
+                    <img src="/icons/facebook.png" alt="Facebook logo">
+                    </a>
+
+                    <a href="https://x.com/yourhandle" target="_blank" aria-label="Visit our X page">
+                    <img src="/icons/twitter.png" alt="X logo">
+                    </a>
+
+                    <a href="https://wa.me/2348012345678" target="_blank" aria-label="Chat with us on WhatsApp">
+                    <img src="/icons/whatsapp.png" alt="WhatsApp logo">
+                    </a>
+
+                    <a href="https://www.instagram.com/eymonkgroup/" target="_blank" aria-label="Visit our Instagram page">
+                    <img src="/icons/instagram.png" alt="Instagram logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <p>&copy; 2024 Auto Guru Ltd. All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>

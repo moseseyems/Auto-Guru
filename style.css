@@ -1,1 +1,651 @@
+.Header {
+  min-height: 700px;
+  padding: 20px 50px;
 
+  background-image: url("https://images.pexels.com/photos/8664308/pexels-photo-8664308.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  color: white;
+}
+
+.Header h1 {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  margin: 0;
+  font-size: 36px;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.80);
+  border-radius: 16px;
+}
+
+.Header ul {
+  position: absolute;
+  top: 35px;
+  right: 50px;
+
+  display: flex;
+  gap: 30px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Header li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.Header p {
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+
+  margin: 0;
+  font-size: 24px;
+}
+
+.Header button {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+
+  background: #ff6b00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Header button:hover {
+  background: #e85f00;
+}
+
+.partners {
+  padding: 60px 0;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.partners h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  padding: 25px 0;
+}
+
+.logo-track {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+
+  animation: scrollLogos 20s linear infinite;
+}
+
+.logo-track img {
+  width: 150px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@keyframes scrollLogos {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.content {
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.80);
+    color: white;
+}
+
+.content h2 {
+  color: #ff6b00;
+}
+
+.cta-form {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.cta-form button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6b00;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cta-form button:hover {
+    background: #e85f00;
+}
+
+.Our-work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 60px 40px;
+}
+
+.Our-work h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.Our-work > div {
+    min-height: 250px;
+    padding: 30px;
+    border-radius: 16px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.Our-work > div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.Our-work h3,
+.Our-work button {
+    position: relative;
+    z-index: 1;
+}
+
+.Our-work h3 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.Our-work button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #ff6b00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Our-work button:hover {
+  background: #e85f00;
+}
+
+.engine-repair {
+    background-image: url('https://images.pexels.com/photos/8478272/pexels-photo-8478272.jpeg');
+}
+
+.engine-repair:hover {
+    background-image: url('https://images.pexels.com/photos/8478272/pexels-photo-8478272.jpeg');
+    filter: brightness(1.2);
+}
+
+.body-work {
+    background-image: url('https://images.pexels.com/photos/4489710/pexels-photo-4489710.jpeg');
+}
+.body-work:hover {
+    background-image: url('https://images.pexels.com/photos/4489710/pexels-photo-4489710.jpeg');
+    filter: brightness(1.2);
+}
+
+.painting {
+    background-image: url('https://images.pexels.com/photos/27982155/pexels-photo-27982155.jpeg');
+}
+.painting:hover {
+    background-image: url('https://images.pexels.com/photos/27982155/pexels-photo-27982155.jpeg');
+    filter: brightness(1.2);
+}
+
+.maintenance {
+    background-image: url('https://images.pexels.com/photos/15489246/pexels-photo-15489246.jpeg');
+}
+.maintenance:hover {
+    background-image: url('https://images.pexels.com/photos/15489246/pexels-photo-15489246.jpeg');
+    filter: brightness(1.2);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    background: rgba(0, 0, 0, 0.45); 
+    direction: rtl;
+    padding: 20px;
+  }
+
+.copyright {
+    background-color: #ff6b00;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.subPage {
+    min-height: 100px;
+    padding: 40px;
+    background-color: #e85f00;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subPage nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.appointment-form {
+    background: white;
+}
+
+.appointment-form form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    border: none;
+    border-radius: 16px;
+    margin-top: 20px;
+    padding: 20px;
+    cursor: pointer;
+    width: 50%;
+    background-color: beige;
+}
+
+.appointment-form label {
+    color: #000;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.appointment-form input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    border: #000 solid 1px;
+}
+
+.appointment-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6b00;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.appointment-form button:hover {
+    background: #e85f00;
+}
+
+
+@media (max-width: 1024px) {
+  .Header {
+    min-height: 600px;
+    padding: 20px 35px;
+  }
+
+  .Header h1 {
+    left: 35px;
+    font-size: 32px;
+  }
+
+  .Header ul {
+    right: 35px;
+    gap: 20px;
+  }
+
+  .Header p,
+  .Header button {
+    left: 35px;
+  }
+
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 30px;
+    gap: 30px;
+  }
+
+  .cta-form {
+    grid-column: 1 / -1;
+  }
+
+  .Our-work {
+    padding: 50px 30px;
+  }
+
+  .appointment-form form {
+    width: 70%;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+  .Header {
+    min-height: 550px;
+    padding: 20px;
+  }
+
+  .Header h1 {
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    padding: 8px 16px;
+  }
+
+  .Header ul {
+    top: 90px;
+    left: 20px;
+    right: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .Header p {
+    left: 20px;
+    bottom: 110px;
+    font-size: 22px;
+    max-width: 85%;
+  }
+
+  .Header button {
+    left: 20px;
+    bottom: 45px;
+  }
+
+  .partners {
+    padding: 45px 0;
+  }
+
+  .partners h2 {
+    font-size: 30px;
+  }
+
+  .logo-track {
+    gap: 35px;
+    animation-duration: 16s;
+  }
+
+  .logo-track img {
+    width: 120px;
+    height: 65px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    padding: 45px 25px;
+    gap: 25px;
+  }
+
+  .Our-work {
+    grid-template-columns: 1fr;
+    padding: 45px 25px;
+  }
+
+  .Our-work h2 {
+    font-size: 30px;
+  }
+
+  .Our-work > div {
+    min-height: 230px;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .subPage {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .subPage nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .appointment-form form {
+    width: 85%;
+  }
+}
+
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .Header {
+    min-height: 520px;
+    padding: 16px;
+    background-position: center;
+  }
+
+  .Header h1 {
+    top: 16px;
+    left: 16px;
+    font-size: 24px;
+    padding: 8px 14px;
+    border-radius: 12px;
+  }
+
+  .Header ul {
+    top: 85px;
+    left: 16px;
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .Header p {
+    left: 16px;
+    bottom: 105px;
+    font-size: 19px;
+    line-height: 1.3;
+  }
+
+  .Header button {
+    left: 16px;
+    bottom: 40px;
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .partners {
+    padding: 35px 0;
+  }
+
+  .partners h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .logo-slider {
+    padding: 18px 0;
+  }
+
+  .logo-track {
+    gap: 25px;
+    animation-duration: 14s;
+  }
+
+  .logo-track img {
+    width: 95px;
+    height: 55px;
+  }
+
+  .content {
+    padding: 35px 18px;
+    gap: 22px;
+  }
+
+  .content h2 {
+    font-size: 24px;
+  }
+
+  .cta-form {
+    padding: 22px;
+  }
+
+  .Our-work {
+    padding: 35px 18px;
+    gap: 18px;
+  }
+
+  .Our-work h2 {
+    font-size: 26px;
+  }
+
+  .Our-work > div {
+    min-height: 210px;
+    padding: 22px;
+    border-radius: 12px;
+  }
+
+  .Our-work h3 {
+    font-size: 23px;
+  }
+
+  .Our-work button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .contact-info {
+    padding: 20px 15px;
+  }
+
+  .social-links a {
+    width: 34px;
+    height: 34px;
+  }
+
+  .subPage {
+    padding: 25px 16px;
+  }
+
+  .subPage nav ul {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .appointment-form form {
+    width: 92%;
+    padding: 18px;
+  }
+
+  .appointment-form input {
+    padding: 10px;
+  }
+
+  .appointment-form button {
+    padding: 11px 18px;
+  }
+}
+
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .Header h1 {
+    font-size: 21px;
+  }
+
+  .Header ul {
+    gap: 12px;
+    font-size: 13px;
+  }
+
+  .Header p {
+    font-size: 17px;
+  }
+
+  .Header button {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+
+  .partners h2,
+  .Our-work h2 {
+    font-size: 24px;
+  }
+
+  .logo-track img {
+    width: 80px;
+    height: 45px;
+  }
+
+  .Our-work h3 {
+    font-size: 20px;
+  }
+
+  .appointment-form form {
+    width: 95%;
+  }
+}
